@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  padding: 1rem 1rem 20rem;
+  background-image: url('./kids.jpg');
+  background-size: cover;
+  background-position: bottom;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: #777;
+  position: relative;
+  text-transform: uppercase;
+  box-shadow:         inset 0px 20px 5px rgba(0,0,0,0.3);
+}
+
+.header__text-box{
+  background-color: white;
+  align-self: center;
+  font-size: 1rem;
+  color: rgb(42, 129, 211);
+}
+.tea-product{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: burlywood;
+  padding: 4rem 4rem;
+  font-size: 1rem;
+  
   color: white;
+  cursor: pointer;
+  transition: all .5s;
+}
+.menu-product{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: burlywood;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border-radius: 5000px;
+  color: white;
+  cursor: pointer;
+  transition: all .5s;
+}
+.menu-product:hover{
+  
+  box-shadow: 1rem 1rem   rgba(0, 0, 0, 50%);
+
 }
 
-.App-link {
-  color: #61dafb;
+.tea-product:hover{
+  
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 50%);
+  
 }
+.productsColumn{
+  width: 100%;
+ 
+  display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 1rem;
+    padding: 1rem 1rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.prodIm{
+  width: 100%;
+
+}
+.profIm{
+  width:3rem;
+  height:3rem;
+  border-radius: 500rem;
+}
+.main{
+  width:100%;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  
+}
+.profile{
+  background-color: white;
+  padding: .5rem 1rem .5rem 4rem;
+  border-radius: 500rem;
+  transition: all .5s;
+  cursor: pointer;
+}
+.profile:hover{
+  
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 50%);
+
+}
+.menu-product{
+  padding: 1rem 1rem;
+}
+.productItems{
+  width: 100%;
+ 
+  display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 1rem;
+    padding: 1rem 1rem;
+}
+.mainTea{
+  
+  padding: 3rem 10rem;
+}
+.teaDiv{
+  background-color:rgb(42, 129, 211);
+  color: white;
+  padding: 2rem 2rem;
+  text-transform: capitalize;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+.aboutProduct{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.teaParagraph{
+  font-size: 1rem;
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+}
+.back{
+  font-size: 1rem;
+}
+.teaIm{
+  width: 100%;
+}
+.forDesserts, .forTeas{
+  opacity: 0;
+}
+@media only screen and (max-width: 548px) {
+  .mainTea{
+  
+    padding: 3rem 3rem;
   }
-  to {
-    transform: rotate(360deg);
+ 
+  .heading-primary--main{
+    font-size: 1.2rem;
+  }
+  .profile{
+    padding: 1rem 1rem;
+    max-width: 6rem;
+  }
+  .productItems{
+    width: 100%;
+   
+    display:grid;
+      grid-template-columns: 1fr;
+      
+      grid-gap: 1rem;
+      padding: 1rem 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainTea{
+  
+    padding: 3rem 3rem;
+  }
+ 
+  .heading-primary--main{
+    font-size: 1rem;
+  }
+  .profile{
+    padding: 1rem 1rem;
+    max-width: 6rem;
   }
 }
